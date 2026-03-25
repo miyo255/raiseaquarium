@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レイズ水族館</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <section class="archive__mv__wrap">
+        <header class="header">
+            <h1 class="header__logo">
+            <img src="../images/icon/logo.svg" alt="レイズ水族館 ロゴ" class="header__icon" width="154" height="45"  >
+            </h1>
+            <form class="header__search" role="search">
+            <input 
+                type="search" 
+                class="header__search-input" 
+                placeholder="サイト内を検索"
+                aria-label="サイト内を検索"
+            >
+            <button type="submit" class="header__search-btn" aria-label="検索">
+                <img src="../images/icon/magnifying-glass.svg" alt="" width="20" height="20">
+            </button>
+            </form>
+        </header>
+
+        <!-- メインビジュアル -->
+        <div class="archive__mv">
+            <h2 class="archive__mv__title">お知らせ</h2>
+        </div>
+         <!-- 波画像 -->
+        <div class="archive__wave">
+        <img src="../images/decoration/wave_graduation.png" alt="" width="750" height="110" >
+        </div>
+    </section>
+
+  <!-- メインコンテンツ -->
+  <main class="archive__main">
+
+    <!-- 記事一覧 -->
+    <ul class="archive__list">
+
+      <li class="archive__item">
+        <a href="../news/single.html" class="archive__link">
+          <div class="archive__img__wrap">
+            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
+          </div>
+          <div class="archive__body">
+            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
+            <h2 class="archive__title">年末年始休業のお知らせ</h2>
+            <span class="archive__cat archive__cat--news">お知らせ</span>
+          </div>
+        </a>
+      </li>
+
+      <li class="archive__item">
+        <a href="../news/single.html" class="archive__link">
+          <div class="archive__img__wrap">
+            <img src="../images/foto/sp_archive_card.jpg" alt="記事タイトル" class="archive__img" width="550" height="390"  >
+          </div>
+          <div class="archive__body">
+            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
+            <h2 class="archive__title">テキストテキストテキストテキスト</h2>
+            <span class="archive__cat archive__cat--event">イベント</span>
+          </div>
+        </a>
+      </li>
+
+      <!-- 以下同じ構造で繰り返し -->
+
+    </ul>
+
+    <!-- ページネーション -->
+    <nav class="pagination" aria-label="ページナビゲーション">
+      <ul class="pagination__list">
+        <li class="pagination__item pagination__item--current">
+          <span>1</span>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">2</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">3</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">4</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">5</a>
+        </li>
+        <li class="pagination__item pagination__item--next">
+          <a href="#" class="pagination__link" aria-label="次のページ">›</a>
+        </li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <!-- トップページと同じフッター -->
+  </footer>
+
+  <!-- タブメニュー -->
+  <nav class="tabmenu" aria-label="タブメニュー">
+    <!-- トップページと同じタブメニュー -->
+  </nav>
+
+</body>
+</html>

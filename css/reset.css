@@ -1,0 +1,50 @@
+/* ============================
+   リセットCSS
+   ブラウザのデフォルトスタイルを統一
+============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-light);
+}
+
+/* リンクのデフォルトスタイルをリセット */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* リストのデフォルトスタイルをリセット */
+ul, ol {
+    list-style: none;
+}
+
+/* 画像のデフォルトスタイル */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* ボタンのデフォルトスタイルをリセット */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
