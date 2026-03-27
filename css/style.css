@@ -137,8 +137,9 @@ body {
 }
 
 .mv__hours-time img {
-  position: relative;
-  top: 4px;  
+  position: absolute;
+  top: 52px;  
+  left: 52px;
 }
 
 .mv__hours-time span {
@@ -239,15 +240,15 @@ body {
 .tabmenu__item--active img {
   width: 22px;
   height: 19px;
-  position: relative;
-  top: 1px;
+  position: absolute;
+  top: 10px;
 }
 
 .tabmenu__item--active span {
   width: 4em;
   text-align: center;
-  position: relative;
-  top: 2px;
+  position: absolute;
+  top: 30px;
   line-height: 14px;
   letter-spacing: -1.1px;
 }
