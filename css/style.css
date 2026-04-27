@@ -1053,3 +1053,11 @@ div.archive__main__deco-right {
 .footer {
   position: relative;
 }
+
+.single__mv {
+   background: url('../images/foto/sp_single_main.jpg') center / cover no-repeat;
+   min-height: 170px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
