@@ -194,7 +194,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 3px;
-  padding: 13.91px 0;
+  /* padding: 13.91px 0; */
   color: #FFFFFF;
   text-decoration: none;
   font-family: 'Kiwi Maru', serif;
@@ -772,6 +772,7 @@ img.animal__bubble.animal__bubble--bottom {
 .footer {
   background: rgba(16, 57, 97, 1);
   padding: 58px 0 27px;
+  margin-top: -8px;
 }
 
 .footer__inner {
@@ -867,7 +868,6 @@ img.animal__bubble.animal__bubble--bottom {
 
 /* メインビジュアル */
 .archive__mv {
-  position: relative;
   aspect-ratio: 375 / 180;
   min-height: 180px;
   background: url('../images/foto/sp_archive_main.jpg') center / cover no-repeat;
@@ -894,28 +894,47 @@ img.animal__bubble.animal__bubble--bottom {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 4px 10px 5px;
   border-radius: 6.25px;
-  top: 10px;
+  margin-top: 30px;
 }
 
-.archive__wave {
+
+/* 記事一覧 */
+.archive__main {
+  padding: 95px 26px 100px;
+  margin-top: -60px;
+  position: relative;
+  background: url('../images/decoration/wave_graduation.png') top center / cover no-repeat;
+}
+div.archive__main__deco-left {
   position: absolute;
+  top: 60px;
+  width: 70px;
+  left: -2px;
+  z-index: 1;
+}
+div.archive__main__deco-right {
+  position: absolute;
+  bottom: 50px;
+  right: 1px;
+  width: 70px;
+}
+.archive__main__wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
   width: 100%;
   z-index: 2;
-  bottom: 0;
 }
-.archive__wave img {
+
+.archive__main__wave img {
   width: 100%;
   display: block;
 }
 
-/* 記事一覧 */
-.archive__main {
-  padding: 40px 26px;
-  background: linear-gradient(to left, rgba(5, 169, 220, 1) 0%, rgba(13, 87, 180, 1) 100%);
-
-}
 
 .archive__list {
+  position: relative;
+  z-index: 2;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -927,6 +946,19 @@ img.animal__bubble.animal__bubble--bottom {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.archive__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4); /* 白い霧 */
+  opacity: 0; /* 最初は非表示 */
+  transition: opacity 0.3s ease; /* ふわっと表示 */
+}
+
+.archive__item:hover::after {
+  opacity: 1; /* ホバー時に表示 */
 }
 
 .archive__link {
@@ -982,7 +1014,7 @@ img.animal__bubble.animal__bubble--bottom {
 
 /* ページネーション */
 .pagination {
-  margin-top: 40px;
+  margin-top: 70px;
   display: flex;
   justify-content: center;
 }
@@ -1002,10 +1034,11 @@ img.animal__bubble.animal__bubble--bottom {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   color: rgba(16, 57, 97, 1);
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(183, 235, 250, 1);
+;
 }
 
 .pagination__item--current span {
@@ -1015,4 +1048,8 @@ img.animal__bubble.animal__bubble--bottom {
 
 .pagination__item--next .pagination__link {
   font-size: 20px;
+}
+
+.footer {
+  position: relative;
 }
