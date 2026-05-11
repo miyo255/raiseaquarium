@@ -15,140 +15,160 @@
     <!-- header -->
   <section class="archive__mv__wrap">
     <header class="header">
-      <h1 class="header__logo">
-      <img src="../images/icon/logo.svg" alt="レイズ水族館 ロゴ" class="header__icon" width="154" height="45"  >
-      </h1>
-      <form class="header__search" role="search">
-      <input 
-          type="search" 
-          class="header__search-input" 
-          placeholder="サイト内を検索"
-          aria-label="サイト内を検索"
-      >
-      <button type="submit" class="header__search-btn" aria-label="検索">
-          <img src="../images/icon/magnifying-glass.svg" alt="" width="20" height="20">
-      </button>
-      </form>
+        <h1 class="header__logo">
+        <img src="../images/icon/logo.svg" alt="レイズ水族館 ロゴ" class="header__icon" width="154" height="45"  >
+        </h1>
+        <form class="header__search" role="search">
+        <input 
+            type="search" 
+            class="header__search-input" 
+            placeholder="サイト内を検索"
+            aria-label="サイト内を検索"
+        >
+        <button type="submit" class="header__search-btn" aria-label="検索">
+            <img src="../images/icon/magnifying-glass.svg" alt="" width="20" height="20">
+        </button>
+        </form>
     </header>
 
     <!-- メインビジュアル -->
     <div class="single__mv">
-      <h2 class="archive__mv__title">お知らせ</h2>
-      
+        <h2 class="archive__mv__title">お知らせ</h2>
     </div>
     
   </section>
 
   <!-- メインコンテンツ -->
-  <main class="archive__main">
+  <main class="archive__main single__main">
     <div class="archive__main__deco-left">
-      <img src="../images/illustration/shark_blue-black.png" alt="サメのイラスト" class="archive__main__img" width="136" height="159" >
+        <img src="../images/illustration/shark_blue-black.png" alt="サメのイラスト" class="archive__main__img" width="136" height="159" >
     </div>
-    <!-- 記事一覧 -->
-    <!-- <ul class="archive__list">
+    <!-- 記事内容 -->
+    <article class="single__content">
+        <div class="single__meta">
+            <span class="single__cat single__cat--news">お知らせ</span>
+            <time class="single__date" datetime="2024-01-01">2024.01.01</time>
+        </div>
+        <h2 class="single__title">見出しh2</h2>
+        <p class="single__text">
+            Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
+        </p>
+        <h3 class="single__subtitle">見出しh3</h3>
+        <h4 class="single__subsubtitle">見出しh4</h4>
+        <h5 class="single__subsubtitle">見出しh5</h5>
+        <h6 class="single__subsubtitle">見出しh6</h6>
+        <blockquote class="single__blockquote">
+            <p class="single__blockquote__text">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
+            <p class="single__blockquote__source">出典元：<a href="#" class="single__link">○○○○○○○○○○○○</a></p>
+        </blockquote>
+        <div class="single__img__wrap single__img__wrap--wide">
+            <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="605" height="355">
+        </div>
+        <figure class="single__figure single__figure--left">
+            <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__figure__img" width="605" height="355">
+            <figcaption class="single__figure__caption_left">
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+            </figcaption>
+        </figure>
+        <figure class="single__figure single__figure--right">
+            <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__figure__img" width="605" height="355">
+            <figcaption class="single__figure__caption_right">
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+                テキストが入ります
+            </figcaption>
+        </figure>
+        <div class="single__img__wrap single__img__wrap--padding">
+            <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="605" height="355">
+        </div>
+        <ul class="single__img__list">
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+            <li class="single__img__item">
+                <img src="../images/foto/single.jpg" alt="画像が入ります" class="single__img" width="290" height="170">
+            </li>
+        </ul>
+        <ol class="single__list single__list--ol">
+            <li class="single__list__item">リストリストリスト</li>
+            <li class="single__list__item">リストリストリスト</li>
+        </ol>
+        <ul class="single__list single__list--ul">
+            <li class="single__list__item">リスト2リスト2リスト2</li>
+            <li class="single__list__item">リスト2リスト2リスト2</li>
+        </ul>
+<pre class="single__code">
+<code class="single__code__text">
+&lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+        <table class="single__table" aria-label="テーブル">
+            <tr class="single__table__row">
+                <td class="single__table__cell">テーブル</td>
+                <td class="single__table__cell">テーブル</td>
+            </tr>
+            <tr class="single__table__row">
+                <td class="single__table__cell">テーブル</td>
+                <td class="single__table__cell">テーブル</td>
+            </tr>
+            <tr class="single__table__row">
+                <td class="single__table__cell">テーブル</td>
+                <td class="single__table__cell">テーブル</td>
+            </tr>
+            <tr class="single__table__row">
+                <td class="single__table__cell">テーブル</td>
+                <td class="single__table__cell">テーブル</td>
+            </tr>
+            <tr class="single__table__row">
+                <td class="single__table__cell">テーブル</td>
+                <td class="single__table__cell">テーブル</td>
+            </tr>
+        </table>
+        <button class="single__button">ボタン</button>
+    </article>
 
-      <li class="archive__item">
-        <a href="../news/single.html" class="archive__link">
-          <div class="archive__img__wrap">
-            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
-          </div>
-          <div class="archive__body">
-            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
-            <h2 class="archive__title">年末年始休業のお知らせ</h2>
-            <span class="archive__cat archive__cat--news">お知らせ</span>
-          </div>
-        </a>
-      </li>
-      <li class="archive__item">
-        <a href="../news/single.html" class="archive__link">
-          <div class="archive__img__wrap">
-            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
-          </div>
-          <div class="archive__body">
-            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
-            <h2 class="archive__title">年末年始休業のお知らせ</h2>
-            <span class="archive__cat archive__cat--news">お知らせ</span>
-          </div>
-        </a>
-      </li>
-      <li class="archive__item">
-        <a href="../news/single.html" class="archive__link">
-          <div class="archive__img__wrap">
-            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
-          </div>
-          <div class="archive__body">
-            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
-            <h2 class="archive__title">年末年始休業のお知らせ</h2>
-            <span class="archive__cat archive__cat--news">お知らせ</span>
-          </div>
-        </a>
-      </li>
-      <li class="archive__item">
-        <a href="../news/single.html" class="archive__link">
-          <div class="archive__img__wrap">
-            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
-          </div>
-          <div class="archive__body">
-            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
-            <h2 class="archive__title">年末年始休業のお知らせ</h2>
-            <span class="archive__cat archive__cat--news">お知らせ</span>
-          </div>
-        </a>
-      </li>
-      <li class="archive__item">
-        <a href="../news/single.html" class="archive__link">
-          <div class="archive__img__wrap">
-            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
-          </div>
-          <div class="archive__body">
-            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
-            <h2 class="archive__title">年末年始休業のお知らせ</h2>
-            <span class="archive__cat archive__cat--news">お知らせ</span>
-          </div>
-        </a>
-      </li>
-      <li class="archive__item">
-        <a href="../news/single.html" class="archive__link">
-          <div class="archive__img__wrap">
-            <img src="../images/foto/sp_archive_card.jpg" alt="年末年始休業のお知らせ" class="archive__img" width="550" height="390"  >
-          </div>
-          <div class="archive__body">
-            <time class="archive__date" datetime="2024-01-01">2024.01.01</time>
-            <h2 class="archive__title">テキストテキストテキストテキスト</h2>
-            <span class="archive__cat archive__cat--news">イベント</span>
-          </div>
-        </a>
-      </li>
-    </ul> -->
-   
-    <!-- ページネーション -->
-    <nav class="pagination" aria-label="ページナビゲーション">
-      <ul class="pagination__list">
-        <li class="pagination__item pagination__item--current">
-          <span>1</span>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">2</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">3</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">4</a>
-        </li>
-        <li class="pagination__item">
-          <a href="#" class="pagination__link">5</a>
-        </li>
-        <li class="pagination__item pagination__item--next">
-          <a href="#" class="pagination__link" aria-label="次のページ">›</a>
-        </li>
-      </ul>
-    </nav>
+
     <div class="archive__main__deco-right">
       <img src="../images/illustration/shark_gray.png" alt="サメのイラスト" class="archive__main__img" width="136" height="159" >
     </div>
     <!-- 波画像 -->
-    <div class="archive__main__wave">
+    <div class="archive__main__wave single__main__wave">
       <img src="../images/decoration/wave_blue-black.png" alt="" width="750" height="110" >
     </div>
 
