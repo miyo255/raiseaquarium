@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レイズ水族館</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+  <section class="archive__mv__wrap">
+    <header class="header">
+        <h1 class="header__logo">
+        <img src="../images/icon/logo.svg" alt="レイズ水族館 ロゴ" class="header__icon" width="154" height="45"  >
+        </h1>
+        <form class="header__search" role="search">
+        <input 
+            type="search" 
+            class="header__search-input" 
+            placeholder="サイト内を検索"
+            aria-label="サイト内を検索"
+        >
+        <button type="submit" class="header__search-btn" aria-label="検索">
+            <img src="../images/icon/magnifying-glass.svg" alt="" width="20" height="20">
+        </button>
+        </form>
+    </header>
+
+    <!-- メインビジュアル -->
+    <div class="single__mv page__mv">
+        <h2 class="archive__mv__title">営業案内</h2>
+    </div>
+    
+  </section>
+
+  <!-- メインコンテンツ -->
+  <main class="archive__main single__main guide__main">
+
+  <!-- ボタン3つ -->
+    <nav class="guide__nav" aria-label="営業案内ナビゲーション">
+        <a href="#guide-time" class="guide__nav__btn">
+        営業時間
+        <img src="../images/icon/down_arrow.svg" class="guide__nav__icon" alt="" width="16" height="16" >
+        </a>
+        <a href="#guide-ticket" class="guide__nav__btn">
+        チケット料金
+        <img src="../images/icon/down_arrow.svg" class="guide__nav__icon" alt="" width="16" height="16" >
+        </a>
+        <a href="#guide-program" class="guide__nav__btn">
+        プログラム
+        <img src="../images/icon/down_arrow.svg" class="guide__nav__icon" alt="" width="16" height="16" >
+        </a>
+    </nav>
+
+    <!-- 詳細コンテンツ -->
+    <section class="guide__section" id="guide-time">
+        <!-- 営業時間の内容 -->
+        <h2 class="guide__section__title">営業時間</h2>
+        <time class="guide__time" datetime="10:00〜18:00">10:00〜18:00</time>    
+        <span class="guide__day">年中無休</span>
+        <p class="guide__note">
+        ※最終入場は閉館の30分前です。<br>
+        ※閉館時間は、時季により変更となる場合があります。
+        </p>
+    </section>
+
+    <section class="guide__section" id="guide-ticket">
+        <!-- チケット料金の内容 -->
+         <div class="ticket__price">
+            <h2 class="guide__section__title">チケット料金</h2>
+            <table class="guide-ticket__table" aria-label=" ticket price table">
+                <tbody class="guide-ticket__table-body">
+                    <tr class="guide-ticket__table-row_header">
+                        <th colspan="2" class="guide-ticket__table-header_adult">大人</th>
+                    </tr>
+                    <tr class="guide-ticket__table-row_body">
+                        <td class="guide-ticket__table-cell__age">高校生以上</td>
+                        <td class="guide-ticket__table-cell__price">1200<span class="unit">円</span></td>
+                    </tr>
+                </tbody>
+                <tbody class="guide-ticket__table-body">
+                    <tr class="guide-ticket__table-row_header">
+                        <th colspan="2" class="guide-ticket__table-header_child">こども</th>
+                    </tr>
+                    <tr class="guide-ticket__table-row_body">
+                        <td class="guide-ticket__table-cell__age">4才以上</td>
+                        <td class="guide-ticket__table-cell__price">400<span class="unit">円</span></td>
+                    </tr>
+                </tbody>
+                <tbody class="guide-ticket__table-body">
+                    <tr class="guide-ticket__table-row_header">
+                        <th colspan="2" class="guide-ticket__table-header_infant">乳幼児</th>
+                    </tr>
+                    <tr class="guide-ticket__table-row_body">
+                        <td class="guide-ticket__table-cell__age">0~3才</td>
+                        <td class="guide-ticket__table-cell__price">無料</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pasport__price">
+            <h2 class="guide__section__title">お得な年間パスポート</h2>
+            <table class="guide-ticket__table" aria-label=" ticket price table">
+                <tbody>
+                    <tr class="guide-ticket__table-row_header">
+                        <th colspan="2" class="guide-ticket__table-header_adult">大人</th>
+                    </tr>
+                    <tr class="guide-ticket__table-row_body">
+                        <td class="guide-ticket__table-cell__age">高校生以上</td>
+                        <td class="guide-ticket__table-cell__price">2600<span class="unit">円</span></td>
+                    </tr>
+                    <tr class="guide-ticket__table-row_header">
+                        <th colspan="2" class="guide-ticket__table-header_child">こども</th>
+                    </tr>
+                    <tr class="guide-ticket__table-row_body">
+                        <td class="guide-ticket__table-cell__age">4才以上</td>
+                        <td class="guide-ticket__table-cell__price">1000<span class="unit">円</span></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="guide__section" id="guide-program">
+        <!-- プログラムの内容 -->
+    </section>
+    <!-- 波画像 -->
+    <div class="archive__main__wave single__main__wave">
+      <img src="../images/decoration/wave_blue-black.png" alt="" width="750" height="110" >
+    </div>    
+  </main>
+
+  <!-- フッター -->
+      <!-- フッター -->
+  <footer class="footer">
+     
+    <div class="footer__inner">
+
+      <!-- ロゴ -->
+      <div class="footer__logo">
+        <img src="../images/icon/logo_shark.svg" alt="レイズ水族館" class="footer__logo__img" width="28" height="43" >
+        <span class="footer__logo__text">レイズ水族館</span>
+      </div>
+
+      <!-- SNSアイコン -->
+      <div class="footer__sns">
+        <a href="" target="_blank" class="footer__sns__link">
+          <img src="../images/icon/x.svg" alt="X" class="footer__sns__icon" width="26" height="26">
+        </a>
+        <a href="" target="_blank" class="footer__sns__link">
+          <img src="../images/icon/instagram.svg" alt="Instagram" class="footer__sns__icon" width="26" height="26">
+        </a>
+        <a href="" target="_blank" class="footer__sns__link">
+          <img src="../images/icon/youtube.svg" alt="YouTube" class="footer__sns__icon" width="26" height="26">
+        </a>
+      </div>
+
+      <!-- ナビゲーション -->
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <div class="footer__nav__inner">
+          <!-- 営業案内 -->
+          <div class="footer__nav__group">
+            <a href="" class="footer__nav__heading">
+              <span class="footer__nav__arrow">&gt;</span>営業案内
+            </a>
+            <ul class="footer__nav__list">
+              <li><a href="" class="footer__nav__link">営業時間</a></li>
+              <li><a href="" class="footer__nav__link">料金</a></li>
+              <li><a href="" class="footer__nav__link">プログラム</a></li>
+            </ul>
+          </div>
+          <!-- お知らせ -->
+          <div class="footer__nav__group">
+            <a href="" class="footer__nav__heading">
+              <span class="footer__nav__arrow">&gt;</span>お知らせ
+            </a>
+            <ul class="footer__nav__list">
+              <li><a href="" class="footer__nav__link">新着情報</a></li>
+              <li><a href="" class="footer__nav__link">イベント情報</a></li>
+              <li><a href="" class="footer__nav__link">生き物日記</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- フロアマップ -->
+        <div class="footer__nav__group">
+          <a href="" class="footer__nav__heading">
+            <span class="footer__nav__arrow">&gt;</span>フロアマップ
+          </a>
+        </div>
+
+        <!-- 生き物紹介 -->
+        <div class="footer__nav__group">
+          <a href="" class="footer__nav__heading">
+            <span class="footer__nav__arrow">&gt;</span>生き物紹介
+          </a>
+        </div>
+
+        <!-- アクセス -->
+        <div class="footer__nav__group">
+          <a href="" class="footer__nav__heading">
+            <span class="footer__nav__arrow">&gt;</span>アクセス
+          </a>
+        </div>
+
+      </nav>
+
+      <!-- コピーライト -->
+      <p class="footer__copyright">©2024RaiseAquarium</p>
+
+    </div>
+  </footer>
+
+
+  <!-- タブメニュー -->
+    <nav class="tabmenu" aria-label="タブメニュー">
+    <a href="#" class="tabmenu__item">
+      <img src="../images/icon/time_2.svg" alt="" width="19" height="19" >
+      <span>営業案内</span>
+    </a>
+    <a href="#" class="tabmenu__item">
+      <img src="../images/icon/map_2.svg" alt="" width="21" height="18" >
+      <span>フロアマップ</span>
+    </a>
+    <a href="#" class="tabmenu__item tabmenu__item--active">
+      <img src="../images/icon/ticket.svg" alt="" width="23" height="19" >
+      <span>チケット予約</span>
+    </a>
+    <a href="#" class="tabmenu__item">
+      <img src="../images/icon/shark.svg" alt="" width="29" height="18" >
+      <span>生き物紹介</span>
+    </a>
+    <a href="#" class="tabmenu__item">
+      <img src="../images/icon/location.svg" alt="" width="24" height="19" >
+      <span>アクセス</span>
+    </a>
+  </nav>
+
+
+</body>
+</html>

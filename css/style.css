@@ -1222,3 +1222,136 @@ table.single__table {
 .single__main__wave {
   bottom: -0.1%;
 }
+
+.page__mv {
+    background: url('../images/foto/page_main.jpg') top center / cover no-repeat;
+}
+.guide__main {
+  margin-top: -55px;
+  padding-top: 90px;
+}
+nav.guide__nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+}
+a.guide__nav__btn {
+  padding: 10px ;
+  background-color: #fff;
+  border-radius: 24px;
+  margin: 10px auto;
+  width: 200px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+a.guide__nav__btn:hover {
+  background-color:rgba(16, 57, 97, 1);
+  color: #fff;
+}
+img.guide__nav__icon {
+  vertical-align: baseline;
+  margin-left: 3px;
+}
+section#guide-time.guide__section {
+  background: #fff;
+  border-radius: 24px;
+  color: rgba(16, 57, 97, 1);
+  margin-top: 30px;
+  padding: 25px 20px;
+}
+h2.guide__section__title {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2.7px solid rgba(24, 172, 211, 1);
+  margin-bottom: 26px;
+}
+time.guide__time {
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 32px;
+}
+span.guide__day {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  padding: 8px 12px;
+  background-color: rgba(24, 172, 211, 1);
+  color: #fff;
+  border-radius: 4px;
+  width: 110px;
+}
+p.guide__note {
+  margin-top: 15px;
+}
+section#guide-ticket.guide__section {
+  background: #fff;
+  border-radius: 24px;
+  color: rgba(16, 57, 97, 1);
+  margin: 40px 0;
+  padding: 25px 20px;
+}
+table.guide-ticket__table {
+  font-size: 18px;
+  margin: 0 auto;
+  width: 85%;
+}
+td.guide-ticket__table-cell__age {
+  color: rgba(24, 172, 211, 1);
+  border-right: solid 2px rgba(24, 172, 211, 1);
+  padding-right: 25px;
+}
+td.guide-ticket__table-cell__price {
+  font-size: 32.4px;
+  font-weight: 500;
+  padding-left: 25px;
+}
+th.guide-ticket__table-header_adult {
+  background-color: rgba(26, 127, 220, 1);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+th.guide-ticket__table-header_child {
+  background-color: rgba(241, 177, 47, 1);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 500; 
+}
+th.guide-ticket__table-header_infant {
+  background-color: rgba(233, 132, 118, 1);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+tbody {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+div.ticket__price {
+  margin-bottom: 50px;
+}
+span.unit {
+  font-size: 0.7em;
+}
+tr.guide-ticket__table-row_body {
+  display: flex;
+  height: 35px;
+  margin: 15px 0 25px;
+  align-items: center;
+  justify-content: center;
+}
