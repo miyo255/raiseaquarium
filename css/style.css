@@ -1392,6 +1392,13 @@ li.guide__program__list {
   display: flex;
   padding: 15px 0;
   border-bottom: 1px dashed rgba(24, 172, 211, 1);
+  border-image: repeating-linear-gradient(
+  90deg,      /* 方向: 90deg=横線、0deg=縦線 */
+  rgba(24, 172, 211, 1) 0px,  /* 線の色と開始位置 */
+  rgba(24, 172, 211, 1) 1px,  /* 線の色と終了位置（線の長さ） */
+  transparent 4px,  /* 隙間の開始位置 */
+  transparent 6px  /* 隙間の終了位置（隙間の長さ） */
+) 1;
 }
 div.guide__program__time {
   font-size: 18px;
@@ -1403,10 +1410,14 @@ div.guide__program__time {
 div.guide__program__content {
   flex: 1;
 }
-div.guide__program__info {
+div.guide__program__info__time,
+div.guide__program__info__location {
   display: flex;
   gap: 5px;
   padding-bottom: 5px;
+}
+div.guide__program__info__location {
+  padding-left: 4px;
 }
 h3.guide__program__name {
   font-size: 24px;
@@ -1415,4 +1426,13 @@ h3.guide__program__name {
 }
 main.page__main {
   padding-bottom: 50px;
+}
+img.guide__program__icon__time {
+  width: 22px;
+}
+img.guide__program__icon__shark {
+  width: 30px;
+}
+img.guide__program__icon__location {
+  height: 21px;
 }
